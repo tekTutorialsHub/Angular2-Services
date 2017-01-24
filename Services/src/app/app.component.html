@@ -1,0 +1,30 @@
+<div class="container">
+    <h1 class="heading"><strong>Services </strong>Demo</h1>
+
+    <button type="button" (click)="getProducts()">Get Products</button>
+
+     <div class='table-responsive'>
+            <table class='table'>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products;">
+                        <td>{{product.productID}}</td>
+                        <td>{{product.name}}</td>
+                        <td>{{product.price}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+</div>
+
+
+
+
+
